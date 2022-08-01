@@ -28,7 +28,12 @@ android {
 }
 
 dependencies {
-
+    implementation 'com.android.volley:volley:1.2.1'
+    //json parsion
+    implementation 'com.squareup.picasso:picasso:2.8'
+    // image loading
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    //googlle play services
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
