@@ -17,7 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class WeatherRVAdapter extends RecyclerView.Adapter<WeatherRVAdapter.viewHolder>{
+public class WeatherRVAdapter extends RecyclerView.Adapter<WeatherRVAdapter.viewHolder> {
     private final Context context;
     private final ArrayList<WeatherRVModel> weatherRVModelArrayList;
 
