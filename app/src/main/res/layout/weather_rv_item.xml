@@ -45,17 +45,21 @@
             android:padding="4dp"
             android:src="@mipmap/ic_launcher"
             android:layout_height="40dp"/>
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_below="@+id/idIVCondition"
-            android:text="23.23"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:layout_centerHorizontal="true"
             android:id="@+id/idTVWindSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idIVCondition"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
             android:padding="3dp"
-            android:layout_margin="4dp"
-            android:layout_height="wrap_content"/>
+            android:text="23.23"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

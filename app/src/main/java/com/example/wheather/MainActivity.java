@@ -19,6 +19,7 @@ import android.os.Bundle;
 import android.service.voice.VoiceInteractionSession;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -46,17 +47,17 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    private RelativeLayout homeRL;
-    private ProgressBar loadingPb;
-    private TextView cityNameTv, temperatureTV, conditionTV;
+    RelativeLayout homeRL;
+    ProgressBar loadingPb;
+    TextView cityNameTv, temperatureTV, conditionTV;
     RecyclerView weatherRV;
-    private TextInputEditText cityEdtText;
+    TextInputEditText cityEdtText;
     ImageView backIv, iconIv, searchIv;
-    private ArrayList<WeatherRVModel> weatherRVModelArrayList;
-    private WeatherRVAdapter weatherRVAdapter;
+    ArrayList<WeatherRVModel> weatherRVModelArrayList;
+    WeatherRVAdapter weatherRVAdapter;
     LocationManager locationManager;
     int PERMISSION_CODE = 1;
-    private String cityName;
+    String cityName;
 
 
     @Override
@@ -175,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
+
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
